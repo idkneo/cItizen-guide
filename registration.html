@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+<head>
+<title>The Citizen Guide</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<link href="css/jiayue.css" rel="stylesheet" type="text/css" />
+		
+		<link href="https://fonts.googleapis.com/css?family=Lato|Lora" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+    	<script type="text/javascript" src="js/tour.js"></script>
+     <script type = "text/javascript"  src = "signupvalidator.js" ></script> 
+</head>
+
+<body>
+<div id="header" class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 hidden-sm hidden-xs">
+          <nav class="nav-bar home">
+            <div class="col-md-2">
+                <h1>
+                  <a title="Citizen Guide" href="index.html">
+                    <img src="images/logo.png" id="logo" alt="Citizen Guide" />
+                  </a>
+                </h1>
+            </div>
+            <div class="col-md-4">
+              <form >
+                <input class="home-search-bar" type="text" name="search" placeholder="Search.." action="results.html">
+              </form>
+            </div>
+            <div class="col-md-6">
+                <div class="tabs">
+                  <li><a class="active" href="blog.html">Blog</a></li>
+                  <li><a href="tourstab.html">Tours</a></li>
+                  <li><a href="bloglist.html">Blog</a></li>
+                  <li><a href="guide.html">Be a Guide</a></li>
+                  <a href="messages.html"><img class="nav-icons" src="images/navbar-icons_06.png"></a>
+                  <a href="profile.html"><img class="nav-icons" src="images/navbar-icons_03.png"></a> 
+                </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- mobile navbar -->
+    </div>
+      <div class="row">
+        <nav class="navbar navbar-default hidden-md hidden-lg hidden-xl">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <h1 style="margin-top:0px">
+                    <a class="navbar-brand" title="Citizen Guide" href="index.html">
+                      <img src="images/logo.png" id="logo" alt="Citizen Guide" />
+                    </a>
+                </h1>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li style="text-align: center"><form >
+                  <input style="width:85%;margin:auto" class="home-search-bar" type="text" name="search" placeholder="Search.." action="results.html">
+                </form><li>
+                <li><a href="bloglist.html">Blog</a></li>
+                <li>
+                  <a href="tourstab.html">Tours </a>
+                </li>
+                <li><a href="guide.html">Be a Guide</a></li>
+
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                <li><a href="messages.html"><img src="images/navbar-icons_06.png" style="width: 20px; margin-right:10px">Messages</a></li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+    </div>
+    <!-- mobile end -->
+  </div>
+
+	<div id="signup" style="height:800px;">
+	<div id="signup-leftcol" style="height:800px;">
+	<h3>Registration</h3>
+	
+	<form action="register_customer.php" method="post">
+
+    <label><b>Full Name: </b></label>
+    <input type="text" name="customername" id="customername" required><br><br>
+
+    <label><b>Password: </b></label>
+    <input type="password" name="customerpassword" id="customerpassword" required><br><br>
+	  
+    <label><b>Password Confirm: </b></label>
+    <input type="password" name="customerpassword2" id="customerpassword2" required><br><br>
+	
+	<label><b>Date of Birth: </b></label>
+    <input type="date" name="customerdob" id="customerdob" required><br><br>
+	<p style="margin-left:50px;">You must be at 18 years of age to register</p><br>
+	  
+    <label><b>Address: </b></label>
+    <textarea type="text" name="customeraddress" id="customeraddress" required></textarea><br><br>
+
+    <label><b>Email: </b></label>
+	<input type="email" name="customeremail" id="customeremail" required><br><br>
+
+    <label><b>Contact No: </b></label>
+	<input type="text" name="customerphone" id="customerphone" required><br><br>
+	
+	<input id="submit" type="submit" value="Register" class="submit-btn" onclick="return validatepassword()" style="margin:0px 0px 0px 200px;">
+  </form>
+   <script type="text/javascript">
+		function validatepassword() {
+        var password = document.getElementById("customerpassword").value;
+        var confirmPassword = document.getElementById("customerpassword2").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+		}
+	</script>
+      <script type = "text/javascript"  src = "signupvalidatorr.js" ></script> 
+  </div>
+  
+	<div id="signup-rightcol" style="height:800px;">
+	</div>
+  </div>
+  
+<div id="footer" class="container-fluid">
+	<div class="row">
+	<div id="leftfooter" class="col-md-4 col-xs-4">
+	<ul>
+		<li><a style="color:#a77419;" href="aboutus.html">About Us</a></li><br>
+		<li><a style="color:#a77419;" href="faq.html">FAQ's</a></li><br>
+		<li><a style="color:#a77419;" href="termsandcondition">Terms and Conditions</a></li>
+	</ul>
+	</div>
+
+	<div id="centerfooter" class="col-md-4 col-xs-4">
+		JOIN OUR MAILING LIST FOR<br> NEWS & PROMOTIONS
+
+		<div id="emailbox">
+			Email Address
+		</div>
+
+	</div>
+
+	<div id="rightfooter" class="col-md-4 col-xs-4">
+		<img id="imgid" src="images/instagram.png" style="width:60px; height:50px;"">
+		<img id="imgid" src="images/facebook.png" style="width:55px; height:50px;"">
+		<img id="imgid" src="images/twitter.png" style="width:60px; height:50px;">
+		<img id="imgid" src="images/phone.png" style="width:60px; height:50px;"">
+		<br><br><br><br><br>
+		<font style="color:#a77419; font-family:'arial'; font-size:15px;"">Copyright &copy; 2008 Citizen Guide</font>
+	</div>
+</div>
+</div>
+</div>
+<div id="footer" class="container-fluid">
+  <div class="row">
+  <div id="leftfooter" class="col-md-4 col-xs-4">
+  <ul>
+    <li><a style="color:#a77419;" href="aboutus.html">About Us</a></li><br>
+    <li><a style="color:#a77419;" href="faq.html">FAQ's</a></li><br>
+    <li><a style="color:#a77419;" href="termsandcondition">Terms and Conditions</a></li>
+  </ul>
+  </div>
+
+  <div id="centerfooter" class="col-md-4 col-xs-4">
+    JOIN OUR MAILING LIST FOR<br> NEWS & PROMOTIONS
+
+    <div id="emailbox">
+      Email Address
+    </div>
+
+  </div>
+
+  <div id="rightfooter" class="col-md-4 col-xs-4">
+    <img id="imgid" src="images/instagram.png" style="width:60px; height:50px;"">
+    <img id="imgid" src="images/facebook.png" style="width:55px; height:50px;"">
+    <img id="imgid" src="images/twitter.png" style="width:60px; height:50px;">
+    <img id="imgid" src="images/phone.png" style="width:60px; height:50px;"">
+    <br><br><br><br><br>
+    <font style="color:#a77419; font-family:'arial'; font-size:15px;"">Copyright &copy; 2008 Citizen Guide</font>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

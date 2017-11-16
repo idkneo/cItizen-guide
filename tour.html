@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Citizen Guide: Wet Market Tour</title>
+  <meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="css/clarence.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="js/tour.js"></script>
+    <style type="text/css">
+
+table {border: 0; width: 400px; border-spacing: 2; margin-top:25px;}
+td, th {padding:10px; font-family: latoregular, sans-serif; border-style: none;}
+tr {background-color:#f6f6f6;}
+
+
+.col-item
+{
+    border: 2px solid #2323A1;
+    border-radius: 5px;
+    background: #FFF;
+}
+.col-item .photo img
+{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.col-item .info
+{
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    margin-top: 1px;
+}
+.col-item:hover .info {
+    background-color: rgba(215, 215, 244, 0.5); 
+}
+.col-item .price
+{
+    /*width: 50%;*/
+    float: left;
+    margin-top: 5px;
+}
+
+.col-item .price h5
+{
+    line-height: 20px;
+    margin: 0;
+}
+
+.price-text-color
+{
+    color: #6ba898;
+}
+
+.col-item .info .rating
+{
+    color: #003399;
+}
+
+.col-item .rating
+{
+    /*width: 50%;*/
+    float: left;
+    font-size: 17px;
+    text-align: right;
+    line-height: 52px;
+    margin-bottom: 10px;
+    height: 52px;
+}
+
+.col-item .separator
+{
+    border-top: 1px solid #FFCCCC;
+}
+
+.clear-left
+{
+    clear: left;
+}
+
+.col-item .separator p
+{
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.col-item .separator p i
+{
+    margin-right: 5px;
+}
+.col-item .btn-add
+{
+    width: 50%;
+    float: left;
+}
+
+.col-item .btn-add
+{
+    border-right: 1px solid #CC9999;
+}
+
+.col-item .btn-details
+{
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+}
+.controls
+{
+    margin-top: 20px;
+}
+[data-slide="prev"]
+{
+    margin-right: 10px;
+}
+</style>
+
+</head>
+<body>
+  <div id="header" class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 hidden-sm hidden-xs">
+          <nav class="nav-bar home">
+            <div class="col-md-2">
+                <h1>
+                  <a title="Citizen Guide" href="index.html">
+                    <img src="images/logo.png" id="logo" alt="Citizen Guide" />
+                  </a>
+                </h1>
+            </div>
+            <div class="col-md-4">
+              <form >
+                <input class="home-search-bar" type="text" name="search" placeholder="Search.." action="results.html">
+              </form>
+            </div>
+            <div class="col-md-6">
+                <div class="tabs">
+                  <li><a class="active" href="blog.html">Blog</a></li>
+                  <li><a href="tours.html">Tours</a></li>
+                  <li><a href="booking.html">Bookings</a></li>
+                  <li><a href="guide.html">Be a Guide</a></li>
+                  <a href="messages.html"><img class="nav-icons" src="images/navbar-icons_06.png"></a>
+                  <a href="profile.html"><img class="nav-icons" src="images/navbar-icons_03.png"></a> 
+                </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- mobile navbar -->
+      <div class="row">
+        <nav class="navbar navbar-default hidden-md hidden-lg hidden-xl">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <h1 style="margin-top:0px">
+                    <a class="navbar-brand" title="Citizen Guide" href="index.html">
+                      <img src="images/logo.png" id="logo" alt="Citizen Guide" />
+                    </a>
+                </h1>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li style="text-align: center"><form >
+                  <input style="width:85%;margin:auto" class="home-search-bar" type="text" name="search" placeholder="Search.." action="results.html">
+                </form><li>
+                <li><a href="blog.html">Blog</a></li>
+                <li>
+                  <a href="tours.html">Tours </a>
+                </li>
+                <li><a href="bookings.html">Bookings</a></li>
+                <li><a href="guide.html">Be a Guide</a></li>
+
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                <li><a href="profile.html"><img src="images/navbar-icons_06.png" style="width: 20px; margin-right:10px">Messages</a></li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+    </div>
+    <!-- mobile end -->
+  </div>
+<div id="wetmarketheader" height="500px">
+  <img src="images/markettour.png" width=100% >
+</div>
+
+<div id="container" style="margin:auto; width:100%; text-align:center; height:100%; background-color:#ffffff; color:#000000;">
+	<div class="row">
+	
+   <div id="tourtabbox">
+          <div id="hostpic">
+             <img src="images/host.png" width="310" height="220" >
+           </div>
+          <div id="hostname" class="hidden-xs">
+            <h3><font style="font-family:latoregular; font-size:20px;"><b>Darren Ho</b></font></h3>
+            <font style="font-family:latoregular; font-size:12px; color:#818181;">Joined in May 2014</font><br><br>
+            <ul class="contactguidebut">
+              <li><a href="#">Contact Guide</a></li>
+            </ul>
+          </div>
+          <div id="hostdescription" class="hidden-sm hidden-xs">
+            <p><i>"I am a social creature, who loves to meet new people and make friends!<br><br> Not only will I not bite, I will bring you on a tour around wet markets in Singapore and experience life as a local!"</i></p>
+          </div>
+      </div>
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-7" style="text-align:left;">
+
+       
+        <div class="touroverview">
+          <p style="font-family:latoblack;font-size:28px">Wet Market Tour</p>
+		  <p><font style="font-family:latoregular; font-size:12px;">Located among the heartlands and always bustling with people and energy in the early mornings, wet markets have been a huge part of Singapore's hisotry and culture. <br><br>Providing convenience to the locals, these markets have gone through the test of time, but it is a dying trade. <br><br>
+      Embark on this tour with us to experience the vibrant culture and busy atmosphere of sellers, buyers and vehicles hurrying around. You can even pick up a bargain or two!<br><br>Places that you will visit: <b>Tekka Wet Market</b> & <b>Geylang Serai Wet Market</b></font></p>
+        </div>
+
+        <div class="tourplan" style="padding-top: 50px">
+          <h3>What to Expect</h3>
+      <table border="0" style="float:left;">
+
+              <tr> <th>0700</th>
+                <td align="left">Gather at Meeting Point</td>
+              </tr>
+
+              <tr> <th>0720</th>
+                <td align="left">Walk to Tekka Wet Market by Foot</td>
+              </tr>
+
+              <tr> <th>0800 - 0900</th>
+                <td align="left">Tour Tekka Wet Market</td>
+              </tr>
+
+              <tr> <th>0900 - 0930</th>
+                <td align="left">Sharing of Experience as Store Vendor</td>
+              </tr>
+
+              <tr> <th>0930 - 1030</th>
+                <td align="left">Travel to Geylang Serai Wet Market by MRT</td>
+              </tr>
+
+              <tr> <th>1030 - 1130</th>
+                <td align="left">Tour Geylang Serai Wet Market</td>
+
+              <tr> <th>1130 - 1230</th>
+                <td align="left">Experience Life as a Vendor</td>
+
+              <tr> <th>1230 - 1330</th>
+                <td align="left">Lunch at Geylang Serai Market</td>
+
+              <tr> <th>1330 - 1400</th>
+                <td align="left">Free Time to Mingle Around!</td>
+
+              </tr></table>
+        </div>
+
+        <div class="tourreview">
+          <div class="reviewtitle">
+            <h3>77 Reviews</h3>
+            <i class="price-text-color fa fa-star"></i>
+            <i class="price-text-color fa fa-star"></i>
+            <i class="price-text-color fa fa-star"></i>
+            <i class="price-text-color fa fa-star"></i>
+            <i class="price-text-color fa fa-star"></i>
+
+          </div>
+
+            <div class="reviewbox hidden-xs">
+          
+              <img src="images/uncle.png">
+            
+              <font style="font-family:latoblack; font-size:20px">Bob</font>
+              <br><br>
+              <p><font style="font-family:latoregular; font-size:12px;">This tour brings me back to my childhood and I enjoyed interacting with the local vendors. The products sold are really fresh and cheap! Wouldn't mind bringing my family on this tour again.<br><br>October 2017</font></p>
+              <div class="greydivider">
+              </div>
+            
+          </div>
+          <div class="reviewbox">
+          
+              <img src="images/girl.png">
+            
+              <font style="font-family:latoblack; font-size:20px">Mary</font>
+              <br><br>
+              <p><font style="font-family:latoregular; font-size:12px;">The tour price is affordable! Concept is interesting too, as it is an eye-opener to see how Singaporeans spend their mornings.<br><br>October 2017</font></p>
+              <div class="greydivider">
+              </div>
+          </div>
+          <div class="reviewbox1 hidden-xs">
+          
+              <img src="images/nguyen.png">
+            
+              <font style="font-family:latoblack; font-size:20px">Nguyen</font>
+              <br><br>
+              <p><font style="font-family:latoregular; font-size:12px;">The host is very friendly and funny! I love the Singapore wet market, which is different from what I experience back home. Would love to be back again!<br><br>August 2017</font></p>
+              
+              <div class="reviewnavigation hidden-xs">
+            <ul class="reviewnav">
+              <li><a href="#"><strong>Previous</strong></a></li>
+              <li><a href="#"><strong>Next</strong></a></li>
+            </ul>
+          </div>
+          </div>
+          
+        </div>
+        
+  </div>
+  	
+  <div class="col-md-3">
+    <br><br>
+    <div class="container-fluid" style="border: 1px solid #dfdfdf; float:left;">
+    <div class="price">  
+      <p><font style="font-size:20px; font-family: latoblack;"><b> 20 SGD</b></font><font style="font-size:20px; font-family: latoregular;"> per person</font></p>
+    </div>
+    <div class="discountbox" style="float:left;">
+        <b><i>20% off!</i></b>
+      </div>
+      <p><font style="font-size:14px; font-family: latoregular;"><i>Usual: <strike>25 SGD</strike></i></font></p>
+      
+
+    
+     
+    <div>
+      <i class="price-text-color fa fa-star"></i>
+      <i class="price-text-color fa fa-star"></i>
+      <i class="price-text-color fa fa-star"></i>
+      <i class="price-text-color fa fa-star"></i>
+      <i class="price-text-color fa fa-star"></i>
+    </div>
+    <div class="greyline">   
+    </div>
+    <form>
+        <b><font style="font-size:14px; font-family: latoregular;">Date: &nbsp;</font></b>
+        <input type="date" name="date"><br>
+        <b><font style="font-size:14px; font-family: latoregular;">Pax: &nbsp;&nbsp;&nbsp;&nbsp;</font></b>
+        <select>
+          <option value="volvo">1</option>
+          <option value="saab">2</option>
+          <option value="mercedes">3</option>
+          <option value="audi">4</option>
+        </select>
+      </form>
+      <a href="blogpost.html" style="text-decoration: none;">
+                              <div id="booknowbutton" class="booknowbutton" style="margin-bottom:20px;">
+                                  BOOK NOW
+                              </div>
+                          </a>
+  </div>
+  
+    <div class="col-md-1">
+	</div>
+	
+	
+	
+</div>
+
+<div id="mapbox" class="hidden-xs">
+          <img src="images/farrerparkmrt.png" style="float:left; margin-left:110px; margin-top:50px; margin-right:30px;">
+          <div class="mapdescription">
+            <h3><font style="font-family:latoblack; font-size:20px;">Meeting Point: Farrer Park MRT Station</font></h3>
+            <table border="0" style="float:left;">
+
+              <tr> <th>Type</th>
+                <td align="left">Private Tour</td>
+              </tr>
+
+              <tr> <th>Mode of Transport</th>
+                <td align="left">By MRT & Foot</td>
+              </tr>
+
+              <tr> <th>Duration</th>
+                <td align="left">5 hour</td>
+              </tr>
+
+              <tr> <th>No. of guests</th>
+                <td align="left">8 - 12 guests</td>
+              </tr>
+
+              <tr> <th>Guest Pick-up</th>
+                <td align="left">No</td>
+              </tr>
+
+              <tr> <th>Cancellation</th>
+                <td align="left">Free cancellation up to 7 days before tour date</td>
+              </tr></table>
+           </div>
+        </div>
+
+</div>
+	<div id="footer" class="container-fluid">
+      <div class="row">
+        <div id="leftfooter" class="col-md-4 col-xs-6">
+        <ul>
+          <li><a style="color:#a77419;" href="aboutus.html">About Us</a></li><br>
+          <li><a style="color:#a77419;" href="faq.html">FAQ's</a></li><br>
+          <li><a style="color:#a77419;" href="termsandcondition">Terms and Conditions</a></li>
+        </ul>
+        </div>
+
+        <div id="centerfooter" class="col-md-4 hidden-xs">
+          JOIN OUR MAILING LIST FOR<br> NEWS & PROMOTIONS
+
+          <div id="emailbox">
+            Email Address
+          </div>
+
+        </div>
+
+        <div id="rightfooter" class="col-md-4 hidden-xs">
+          <img id="imgid" src="images/instagram.png" style="width:60px; height:50px;"">
+          <img id="imgid" src="images/facebook.png" style="width:55px; height:50px;"">
+          <img id="imgid" src="images/twitter.png" style="width:60px; height:50px;">
+          <img id="imgid" src="images/phone.png" style="width:60px; height:50px;"">
+          <br><br><br><br><br>
+          <font style="color:#a77419; font-family:'arial'; font-size:15px;"">Copyright &copy; 2008 Citizen Guide</font>
+        </div>
+      </div>
+    </div>
+</div>
+
+</body>
+</html>

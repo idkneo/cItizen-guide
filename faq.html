@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Help Centre</title>
+  <meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
+		<link href="css/faqs.css" rel="stylesheet" type="text/css" />
+		
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+	
+</head>
+<body>
+  
+<div id="whitebackground">
+	<div id="header" class="container-fluid">
+	    <div class="row">
+	      <div class="col-md-12 hidden-sm hidden-xs">
+	        <nav class="nav-bar home">
+	        	<div class="col-md-2">
+		            <h1>
+		              <a title="Citizen Guide" href="index.html">
+		                <img src="images/logo.png" id="logo" alt="Citizen Guide" />
+		              </a>
+		            </h1>
+		        </div>
+		        <div class="col-md-4">
+		          <form >
+		            <input class="home-search-bar" type="text" name="search" placeholder="Search.." action="results.html">
+		          </form>
+		        </div>
+		        <div class="col-md-6">
+		            <div class="tabs">
+		              <li><a class="active" href="blog.html">Blog</a></li>
+		              <li><a href="tourstab.html">Tours</a></li>
+		              <li><a href="bloglist.html">Blog</a></li>
+		              <li><a href="guide.html">Be a Guide</a></li>
+		              <a href="messages.html"><img class="nav-icons" src="images/navbar-icons_06.png"></a>
+		              <a href="profile.html"><img class="nav-icons" src="images/navbar-icons_03.png"></a> 
+		            </div>
+	        	</div>
+	        </nav>
+	      </div>
+	    </div>
+	    <!-- mobile navbar -->
+	    <div class="row">
+		    <nav class="navbar navbar-default hidden-md hidden-lg hidden-xl">
+				  <div class="container-fluid">
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>                        
+				      </button>
+				      <h1 style="margin-top:0px">
+			              <a class="navbar-brand" title="Citizen Guide" href="index.html">
+			                <img src="images/logo.png" id="logo" alt="Citizen Guide" />
+			              </a>
+			          </h1>
+				    </div>
+				    <div class="collapse navbar-collapse" id="myNavbar">
+				      <ul class="nav navbar-nav">
+				      	<li style="text-align: center"><form >
+			            <input style="width:85%;margin:auto" class="home-search-bar" type="text" name="search" placeholder="Search.." action="results.html">
+			          </form><li>
+				        <li><a href="bloglist.html">Blog</a></li>
+				        <li>
+				          <a href="tourstab.html">Tours </a>
+				        </li>
+				        <li><a href="guide.html">Be a Guide</a></li>
+
+				      </ul>
+				      <ul class="nav navbar-nav navbar-right">
+				        <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+				        <li><a href="messages.html"><img src="images/navbar-icons_06.png" style="width: 20px; margin-right:10px">Messages</a></li>
+				      </ul>
+				    </div>
+				  </div>
+			</nav>
+		</div>
+		<!-- mobile end -->
+	</div>
+
+<div class="jumbotron" id="jumbo2">
+	<div id="jumbotext2">
+		<p style="font-size:46px"><strong>Need Help?</strong> </p><br>
+	</div>
+	<div class="input-group" style="width:65%;padding-left:10%">
+        <input type="text" class="form-control" placeholder="Search help articles" style="height:48px">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search" style="height:34px; padding-top:10px"></i>
+          </button>
+        </div>
+      </div>
+</div>
+
+<div id="container" style="margin:auto; width:100%; text-align:left; height:100%; margin-top:25px;">
+	<div class="row">
+	<div class="col-md-1">
+	</div>
+
+  <div class="col-md-2">
+	<div class="panel panel-default">
+    <div class="panel-heading" style="font-size:24px"><strong>Information</strong></div>
+    <div class="panel-body">FAQ</div>
+	<a href="#guides"><div class="panel-body">For Guides</div></a>
+	<a href="#travelers"><div class="panel-body">For travelers</div></a><hr>
+	<a href="#cancellation"><div class="panel-body">Cancellation</div></a>
+	<a href="#payment"><div class="panel-body">Payment</div></a><hr>
+	<a href="#aboutus"><div class="panel-body">About us</div></a>
+	<a href="#contactus"><div class="panel-body">Contact us</div></a>
+	</div>
+  </div>
+  
+
+	
+  <div class="col-md-8">
+    <div style="margin-top:10px; margin-left:15px;">
+		<p style="font-size:28px"><strong>Suggested Topics</strong></p>
+    </div>
+	
+	<div style="margin-left:15px">
+		<p id="guides" style="font-size:24px">For Guides</p>
+		<button class="faq-item-question" onclick="w3.toggleShow('#q1')">>Who can become a host?</button>
+		<div id="q1" style="display:none">
+			<p>Anyone can become a host! Are you a talented foodie? Do you love your city and can’t wait to show the hidden gems through the eyes of a local? Or do you have an incredible skill that you would love to share?<br><br>
+				Become a host by simply creating your own offer.
+			</p>
+		</div>
+		<hr>
+		
+		<button class="faq-item-question" onclick="w3.toggleShow('#q2')">>What does the signup process look like?</button>
+		<div id="q2" style="display:none">
+			<p>It’s a fairly straightforward process to put your qualified foodie experience, tour or activity online. Simply register as a host on our website and follow the steps. www.citizenguide.com/become-a-guide
+				<br><br>
+				Don’t worry, it’s completely free to sign-up as a host. 
+			</p> 
+		</div>
+		<hr>
+		
+		<button class="faq-item-question" onclick="w3.toggleShow('#q3')">>What services does Citizen Guide offer you as a guide and what is the fee for it?</button>
+		<div id="q3" style="display:none">
+				<p>Citizen Guide offers hosts a platform to offer their experience to guests from around the world. To enable guests to find hosts and have an excellent customer experience, Citizen Guide delivers several services:
+				<br><br>
+a. An easy to use platform to receive and manage bookings.
+<br><br>
+b. Promotions of our hosts and experiences on the platform and through many different marketing channels. 
+<br><br>
+c. Help in promoting your experiences by offering free professional photography and advice, during a personal visit by one of our local ambassadors.
+<br><br>
+d. Payment in full when a guest makes a late cancellation or is a ‘no show’, When payment is made online’. We also give you partial payment (20%) when you agree with the guest to make payment in cash.
+<br><br>
+e. To administer the payments from the guest to local hosts in a safe and secure way.
+<br><br>
+f. To deliver outstanding customer service that fulfils your needs. Our aim is to deliver happiness!
+<br><br>
+For these services Citizen Guide asks a transparent service fee of 20% of the price for bookings.
+				</p>
+		</div>
+		<hr>
+		
+		<button class="faq-item-question" onclick="w3.toggleShow('#q4')">>Boost your sales with an instant confirmation</button>
+		<div id="q4" style="display:none">
+				<p>Instant booking confirmation is available for hosts whose confirmation rate and response rate are above 80 percent, and who are among the most booked hosts in their city. Activate instant confirmation and receive more guests from Withlocals!
+<br><br>
+What to do if you want to join the ‘instant confirmation’ program but you are not there yet?
+<br><br>
+- Instantly answer messages from potential guests 
+<br><br>
+- Confirm your bookings within 48 hours<
+<br><br>
+- Keep your agenda updated here
+<br><br>
+- Have any ideas how to promote your experience? Share them with us – we support all initiatives!
+<br><br>
+</p>
+		</div>
+		<hr>
+		
+		<button class="faq-item-question" onclick="w3.toggleShow('#q5')">>Do I need to be a professional cook or tour guide?</button>
+		<div id="q5" style="display:none">
+				<p>Citizen Guide is open for everyone. We’re always happy to welcome foodies with a passion for cooking, love for their local area or a specific skill for your community.
+
+Please note that all our tour guides need to comply with the local rules and guidelines for guiding in their country. </p>
+		</div>
+		<hr>
+		
+		<button class="faq-item-question" onclick="w3.toggleShow('#q6')">>How do I calculate the right price for my experience?</button>
+		<div id="q6" style="display:none">
+				<p>Think about what you want to receive, what is a fair price for your experience? Take into consideration the time and effort you will put in as well as any extra elements such as ingredients for dinner, gas, entrance tickets etc.
+<br><br>
+You determine the price yourself. The Citizen Guide 20% fee is automatically calculated and deducted from the total price. So suppose you offer a home dinner for $10, the Citizen Guide fee will be $2. For ease we directly withdraw this fee, so you’ll receive $8 through your preferred payment method.
+<br><br>
+We ask you not to display your experiences for a lower price on other websites than Citizen Guide. We’re an open marketplace so price competition between hosts in the same area is likely.</p>
+		</div>
+		<hr>
+		
+		<p id="travelers" style="font-size:24px; margin-top:16px">For travelers</p>
+		<button class="faq-item-question" onclick="w3.toggleShow('#q7')">>What kind of experience can I book?</button>
+		<div id="q7" style="display:none">
+				<p>We focus on 3 categories, Food Experiences. Cultural Exchange and Things To Do. This could range from a dinner at a family’s home to a mountain hike to hidden places, or even a traditional stone-carving workshop.</p>
+		</div>
+		<hr>
+		
+		<button class="faq-item-question" onclick="w3.toggleShow('#q8')">>What does the signup process look like?</button>
+		<div id="q8" style="display:none">
+			<p>You can sign-up by creating an account via our website: CitizenGuide.com. You’ll receive a confirmation email after which you have to choose to signup either as a host or a guest. After you’ve selected to become a guest, please fill in your profile. Once you’re done, you can start searching for one of our unique experiences.
+			</p> 
+		</div>
+		<hr>
+		
+		
+		<button class="faq-item-question" onclick="w3.toggleShow('#q9')">>Are there any booking fees applicable?</button>
+		<div id="q9" style="display:none">
+			<p>No, the prices you see on the website are the prices you pay as a guest. No additional fees are applied.
+			</p> 
+		</div>
+		<hr>
+		
+		<p id="cancellation" style="font-size:24px; margin-top:16px">Cancellation</p>
+		
+		<button class="faq-item-question" onclick="w3.toggleShow('#q10')">>Cancelling for guest</button>
+		<div id="q10" style="display:none">
+			<p>Booking Requests rejected/withdrawn/expired before confirmation: All bookings need to be confirmed within 48 hours. If your booking request is rejected or not confirmed within 48 hours by the host, or when you withdraw the request before confirmation, you are not charged.
+<br><br>
+Booking cancelled by the guest:
+<br><br>
+More than 14 days before the experience date: You will be refunded 80% of the total price.<br>
+Less than 14 days before the experience date: The guide will be fully paid, you won’t receive a refund.<br><br>
+Booking cancelled by the guide: 100% refund goes back to you!
+			</p> 
+		</div>
+		<hr>
+		
+		<button class="faq-item-question" onclick="w3.toggleShow('#q11')">>Cancelling for guides</button>
+		<div id="q11" style="display:none">
+			<p>Booking Requests rejected/withdrawn/expired before confirmation: All bookings must be confirmed within 48 hours. If you reject or don’t confirm within this time range, the booking request expires and no payment will be made to you. This also counts when the guest withdraws the booking request before you confirm it. Make sure you click on that “Confirm” button!
+<br><br>
+Booking cancelled by the guest:
+<br><br>
+More than 14 days before the experience date: You won't receive any payment.<br>
+Less than 14 days before the experience date: you benefit from the booking guarantee! The booking guarantee depends on your chosen payment method.<br><br>
+Booking cancelled by the guide: When you cancel a confirmed booking, you won't receive any payment. But more importantly: your confirmation rate will be negatively influenced. Are you sure you want to do this? It decreases your chance to receive future bookings.<br><br>
+			</p> 
+		</div>
+		<hr>
+		
+		<p id="payment" style="font-size:24px; margin-top:16px">Payment</p>
+		
+		<button class="faq-item-question" onclick="w3.toggleShow('#q12')">>What payment methods do you offer?</button>
+		<div id="q12" style="display:none">
+			<p>You can pay for your booking via credit card or PayPal to Citizen Guide. To view all payment methods in your country, simply select the flag in the checkout page.
+			</p> 
+		</div>
+		<hr>
+		
+		<button class="faq-item-question" onclick="w3.toggleShow('#q13')">>When do I need to make the payment?</button>
+		<div id="q13" style="display:none">
+			<p>Once you have made a booking and the booking is accepted, the payment will directly be processed and collected by Citizen Guide. It doesn’t matter if it takes 2 days or 2 months before the experience.
+			</p> 
+		</div>
+		<hr>
+		
+		<button class="faq-item-question" onclick="w3.toggleShow('#q14')">>Can I cancel my booking as a guest and do I receive a refund?</button>
+		<div id="q14" style="display:none">
+			<p>Up to 14 days before a booked experience is due to take place you can cancel your booking and we will refund 80% of the initial payment, we will take 20% as a cancellation fee. If you cancel your booking within 14 days of the experience date or if you don’t show up at all, you are not eligible for a refund.
+			</p> 
+		</div>
+		<hr>
+		
+		<button class="faq-item-question" onclick="w3.toggleShow('#q15')">>What pay-out methods do you offer?</button>
+		<div id="q15" style="display:none">
+			<p>All of our guides will be paid by PayPal or bank transfer when possible. However, in some countries PayPal is not available. In these cases, the guest receives a bill from us before your experience and pays you in cash after the experience.
+			</p> 
+		</div>
+		<hr>
+		
+		<button class="faq-item-question" onclick="w3.toggleShow('#q16')">>Do I have to pay taxes on my earnings?</button>
+		<div id="q16" style="display:none">
+			<p>Yes, as a host you are responsible for complying with the applicable tax laws in your country related to the payment you receive. 
+			</p> 
+		</div>
+		<hr>
+		
+		<button class="faq-item-question" onclick="w3.toggleShow('#q17')">>Do I have to pay taxes on my earnings?</button>
+		<div id="q17" style="display:none">
+			<p>Yes, as a host you are responsible for complying with the applicable tax laws in your country related to the payment you receive. 
+			</p> 
+		</div>
+		<hr>
+		
+		<p id="aboutus" style="font-size:24px; margin-top:16px">About Us</p>
+
+		<button class="faq-item-question" onclick="w3.toggleShow('#q18')">>Why CitizenGuide?</button>
+		<div id="q18" style="display:none">
+			<p>We believe that unique travel experiences make great stories. And this world deserves as much positive stories as it can possibly get. That’s why we started CitizenGuide.com.
+<br><br>
+We connect travellers and locals in cities all over the world – directly and on-demand. Together they exchange culture and create unique and personal travel experiences - experiences worth sharing.
+<br><br>
+Whenever you are in need of trustworthy personal guidance abroad, we make sure there is a local available to let you experience the city like a local. 100% private and at a fair price.
+<br><br>
+So go ahead, meet new people and embrace new cultures the way you want it, whenever you want it and share your story. Because sharing positive stories will brighten up the world!
+<br><br>
+CitizenGuide.com. It’s personal.
+			</p> 
+		</div>
+		<hr>
+		
+		<p id="contactus" style="font-size:24px; margin-top:16px">Contact Us</p>
+
+		<button class="faq-item-question" onclick="w3.toggleShow('#q19')">>Get in touch</button>
+		<div id="q19" style="display:none">
+			<p>For all your questions, suggestions or requests, feel free to contact us at any time!<br><br>
+			CitizenGuide.com<br><br>
+Ang Mo Kio 25<br>
+5611 AZ Eindhoven<br>
+Singapore<br><br>
+
+Phone: 6124 1429<br>
+E-mail: info@citizenguide.com<br>
+Skype: CitizenGuide
+			</p> 
+		</div>
+		<hr>
+		
+	</div>
+  </div>
+  	
+
+  <div class="col-md-1">
+	</div>
+	
+</div>
+</div>
+
+
+	 <div id="footer" class="container-fluid">
+      <div class="row">
+        <div id="leftfooter" class="col-md-4 col-xs-6">
+        <ul>
+          <li><a style="color:#a77419;" href="aboutus.html">About Us</a></li><br>
+          <li><a style="color:#a77419;" href="faq.html">FAQ's</a></li><br>
+          <li><a style="color:#a77419;" href="termsandcondition">Terms and Conditions</a></li>
+        </ul>
+        </div>
+
+        <div id="centerfooter" class="col-md-4 hidden-xs">
+          JOIN OUR MAILING LIST FOR<br> NEWS & PROMOTIONS
+
+          <div id="emailbox">
+            Email Address
+          </div>
+
+        </div>
+
+        <div id="rightfooter" class="col-md-4 hidden-xs">
+          <img id="imgid" src="images/instagram.png" style="width:60px; height:50px;"">
+          <img id="imgid" src="images/facebook.png" style="width:55px; height:50px;"">
+          <img id="imgid" src="images/twitter.png" style="width:60px; height:50px;">
+          <img id="imgid" src="images/phone.png" style="width:60px; height:50px;"">
+          <br><br><br><br><br>
+          <font style="color:#a77419; font-family:'arial'; font-size:15px;"">Copyright &copy; 2008 Citizen Guide</font>
+        </div>
+      </div>
+    </div>
+</div>
+
+</body>
+</html>
